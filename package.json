@@ -1,0 +1,61 @@
+{
+  "name": "@xrpl-sale/sdk",
+  "version": "1.0.0",
+  "description": "Official JavaScript/TypeScript SDK for XRPL.Sale platform integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrplsale/js-sdk.git"
+  },
+  "keywords": [
+    "xrpl",
+    "xrpl-sale",
+    "launchpad",
+    "blockchain",
+    "token-sale",
+    "sdk",
+    "typescript",
+    "javascript"
+  ],
+  "author": "XRPL.Sale Development Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xrplsale/js-sdk/issues"
+  },
+  "homepage": "https://github.com/xrplsale/js-sdk#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.37.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "crypto": "^1.0.1",
+    "xrpl": "^3.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
