@@ -2,7 +2,7 @@
 
 Official JavaScript/TypeScript SDK for integrating with the XRPL.Sale platform - the native XRPL launchpad for token sales and project funding.
 
-[![npm version](https://badge.fury.io/js/%40xrpl-sale%2Fsdk.svg)](https://www.npmjs.com/package/@xrpl-sale/sdk)
+[![npm version](https://badge.fury.io/js/%40xrplsale%2Fsdk.svg)](https://www.npmjs.com/package/@xrplsale/sdk)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -20,19 +20,19 @@ Official JavaScript/TypeScript SDK for integrating with the XRPL.Sale platform -
 ## Installation
 
 ```bash
-npm install @xrpl-sale/sdk
+npm install @xrplsale/sdk
 ```
 
 Or with yarn:
 
 ```bash
-yarn add @xrpl-sale/sdk
+yarn add @xrplsale/sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { XRPLSaleClient } from '@xrpl-sale/sdk';
+import { XRPLSaleClient } from '@xrplsale/sdk';
 
 // Initialize the client
 const client = new XRPLSaleClient({
@@ -216,7 +216,7 @@ import {
   ValidationError, 
   AuthenticationError,
   NotFoundError 
-} from '@xrpl-sale/sdk';
+} from '@xrplsale/sdk';
 
 try {
   const project = await client.projects.get('invalid-id');
@@ -238,7 +238,7 @@ try {
 The SDK includes helpful utility functions:
 
 ```typescript
-import { XRPLUtils, FormatUtils, ValidationUtils } from '@xrpl-sale/sdk';
+import { XRPLUtils, FormatUtils, ValidationUtils } from '@xrplsale/sdk';
 
 // XRPL utilities
 const xrpAmount = XRPLUtils.dropsToXrp('1000000'); // '1'
@@ -326,7 +326,7 @@ npm run lint:fix
 The SDK is written in TypeScript and includes comprehensive type definitions:
 
 ```typescript
-import { Project, Investment, ProjectStatus } from '@xrpl-sale/sdk';
+import { Project, Investment, ProjectStatus } from '@xrplsale/sdk';
 
 const project: Project = await client.projects.get('proj_123');
 const status: ProjectStatus = project.status; // Type-safe!
