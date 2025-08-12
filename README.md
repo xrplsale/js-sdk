@@ -342,7 +342,7 @@ const status: ProjectStatus = project.status; // Type-safe!
 
 ## Support
 
-- 📖 [Documentation](https://www.xrpl.sale/documentation)
+- 📖 [Documentation](https://www.xrpl.sale/docs)
 - 💬 [Discord Community](https://discord.gg/xrpl-sale)
 - 🐛 [Issue Tracker](https://github.com/xrplsale/js-sdk/issues)
 - 📧 [Email Support](mailto:developers@xrpl.sale)
@@ -353,9 +353,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Links
 
-- [XRPL.Sale Platform](https://xrpl.sale)
-- [API Documentation](https://www.xrpl.sale/documentation/api-reference)
-- [Other SDKs](https://www.xrpl.sale/documentation/developers/sdk-downloads)
+- [XRPL.Sale Platform](https://www.xrpl.sale)
+- [API Documentation](https://www.xrpl.sale/api-reference)
+- [Other SDKs](https://www.xrpl.sale/docs/sdk-downloads)
 - [GitHub Organization](https://github.com/xrplsale)
 
 ---
